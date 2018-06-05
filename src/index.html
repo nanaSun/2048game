@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超级简易2048</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		*{margin:0;padding: 0px}
+		html,body{ height: 100%; overflow: hidden; }
+		ul{ width: 300px; height: 300px; margin:100px auto 0; }
+		ul li{ width:75px; height: 75px; float: left; list-style: none; text-align: center; line-height: 75px; border: 1px solid #666; color:#fff; font-size: 30px; box-sizing: border-box;}
+		ul li:nth-child(odd){
+			background: #5ed1ba;
+		}
+		ul li:nth-child(even){
+			background: #ff8b40;
+		}
+	</style>
+</head>
+<body>
+	<ul id="2048Game"></ul>
+	<script type="text/javascript">
+		document.body.addEventListener("touchmove",function(e){
+			e.preventDefault();
+			e.stopPropagation();
+		},false);
+	</script>
+	<script src="./scripts/init.js"></script>
+</body>
+</html>

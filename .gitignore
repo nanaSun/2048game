@@ -1,0 +1,25 @@
+# System and IDE files
+Thumbs.db
+.phpintel
+.DS_Store
+.idea
+*.suo
+*.sublime-project
+*.sublime-workspace
+
+# Vendors
+node_modules/
+bower_components/
+
+# Build
+dist/
+/npm-debug.log
+out/
+
+#others
+build/
+docs/
+filters/
+resources/
+tasks/
+typescript/
