@@ -9,7 +9,7 @@ for(var i=0;i<base_array.length;i++){
 	container.appendChild(tmp);
 }
 render()
-container.addEventListener("keyup",function(e) {
+document.addEventListener("keyup",function(e) {
 	let {keyCode}=e,action;
 	switch(keyCode){
 		case 37:action="left";break;
